@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Card</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .card {
+      margin: 10px;
+    }
+  </style>
+</head>
+<body> 
+    <h1 style="text-align: center;">Lộ trình học tiếng Anh</h1>
+    <div id="accordion">
+
+        <div class="card">
+            <div class="card-header">
+                <a class="card-link" data-toggle="collapse" href="#collapse1">
+                Level 1: Cơ bản
+                </a>
+            </div>
+            <div id="collapse1" class="collapse show" data-parent="#accordion">
+                <div class="card-body">
+                    <ul>
+                        <li>Học từ vựng cơ bản (1000 từ thông dụng nhất).</li>
+                        <li>Luyện nghe và phát âm các âm cơ bản.</li>
+                        <li>Học ngữ pháp cơ bản:Thì hiện tại đơn, thì hiện tại tiếp diễn.</li>
+                        <li>Thực hành viết các câu đơn giản về giới thiệu bản thân.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      
+        <div class="card">
+            <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapse2">
+                Level 2:Trung cấp
+            </a>
+            </div>
+                <div id="collapse2" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <ul>
+                            <li>Mở rộng từ vựng:Các chủ đề phổ biến:Gia đình công việc sở thích</li>
+                            <li>Luyện nghe các đoan hội thoại và phim ngắn.</li>
+                            <li>Nâng cao ngữ pháp:Thì quá khứ đơn, thì quá khứ tiếp diễn.</li>
+                            <li>Thực hành viết văn ngắn, mô tả 1 ngày của bạn.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+      
+        <div class="card">
+            <div class="card-header">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapse3">
+                Level 3:Nâng cao
+                </a>
+            </div>
+            <div id="collapse3" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                    <ul>
+                        <li>Học từ vựng nâng cao: từ đồng nghĩa, thành ngữ</li>
+                        <li>Luyện nghe các bài nói chuyện,podcard tiếng Anh</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

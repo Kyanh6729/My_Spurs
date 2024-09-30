@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Layout website</title>
+        <style type="text/css">
+            body{
+                margin:0px;
+                padding:0px;
+                overflow: auto;
+                border:solid;
+                width:915px;
+            }
+            .clear{
+                clear:left;
+            }
+            .div1{
+                background: red;
+                margin:0px;
+                padding:1px;
+            }
+            .div2{
+                background: green;
+                margin:0px;
+                padding:5px;
+            }
+            .div3{
+                background: purple;
+                clear:left;
+                margin:0px;
+                padding:1px;
+            }
+            
+            .divr {
+                float: left;
+                padding-bottom: 300px; 
+                padding-right: 200px;
+                background: yellow;
+                margin:0px;
+            }
+            .divl {
+                float: left;
+                padding-bottom: 300px; 
+                padding-right: 200px;
+                background: blue;
+                margin:0px;
+            }
+            .divc {
+                float: left;
+                padding-bottom: 300px; 
+                padding-right: 400px;
+                background: red;
+                margin:0px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="div1" id="header">
+            <p >Header</p>
+        </div>
+        <div id="menu" class="div2">
+            <p>Menu</p>
+        </div>
+        <div id="main content">
+            <p class="divl">Left</p>
+            <p class="divc">Content</p>  
+            <p class="divr">Right</p>
+        </div>
+        <div class="div3" id="footer">
+            <p>Footer</p>
+        </div>
+    </body>
+</html>

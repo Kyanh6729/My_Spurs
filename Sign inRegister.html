@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Project</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .outlined-text {
+        color: white; /* Màu chữ bên trong */
+        text-shadow: 
+            -1px -1px 0 #000000,  
+             1px -1px 0 rgb(0, 0, 0),
+            -1px  1px 0 rgb(0, 0, 0),
+             1px  1px 0 rgb(0, 0, 0); /* Tạo outline bằng cách sử dụng shadow */
+        font-size: 48px; /* Kích thước chữ */
+    }
+    img{
+        filter: brightness(50%);
+    }
+    footer {
+    background-color: #1b1b1b;
+    color: #fff;
+    padding: 20px 0;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-around;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .footer-section {
+        flex: 1;
+        margin: 0 20px;
+    }
+
+    .footer-section h4 {
+        border-bottom: 1px solid #fff;
+        padding-bottom: 10px;
+    }
+
+    .footer-section ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .footer-section ul li {
+        margin: 10px 0;
+    }
+
+    .footer-section ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .footer-section ul li a:hover {
+        text-decoration: underline;
+    }
+
+</style>
+</head>
+<body>
+    
+    <!-- Menu -->
+
+    <ul class="nav justify-content-center" style="background-color: black; padding: 0; display: flex; align-items: center; height: 60px;position:fixed;z-index: 1000;">
+        <img src="Spurs Fan.png" alt="logo" width="3%">
+        <li class="nav-item">
+            <a class="nav-link"  href="Project.html" style="color: white;">Trang chủ</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="gttot.html" style="color: white;">Giới thiệu</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#" style="padding: 0; margin: 0;">
+                <div class="form-group" style="margin: 0;">
+                    <select class="form-control" id="sel1">
+                        <option>Tiếng Việt</option>
+                        <option>English</option>
+                        <option>Español</option>
+                        <option>中國人</option>
+                    </select>
+                </div>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Subscribe.html" style="color: white;">Subscribe</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Search.html" style="color: white;">Search site</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Sign inRegister.html" style="color: white;">Sign in/Register</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://www.tottenhamhotspurstadium.com/" style="color: white;">Tottenham Hospurs Stadium</a>
+        </li>
+    </ul>
+    <br>
+    <br>
+    <div id="demo" class="container" data-ride="carousel">
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="sign in.jpg" alt="goal" width="1300" height="800">
+                <button class="btn btn-outline-primary" style="position: absolute; bottom: 5%; right: 20%; border: none; padding: 10px; cursor: pointer;">
+                    <a class="nav-link" href="Subscribe.html" style="color: rgb(255, 255, 255);font-size: 150%;">Bạn chưa có tài khoản</a>
+                </button>
+                <button class="btn btn-outline-primary" data-toggle="modal" data-target="#myModal" style="position: absolute; bottom: 5%; right: 60%; border: none; padding: 10px; cursor: pointer;">
+                    <a class="nav-link" style="color: rgb(255, 255, 255);font-size: 150%;">Đăng nhập</a>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal" id="myModal" style="top:30%;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body modal-sm">
+                    <div class="form-group">
+                        <label>Username</label>
+                        <input type="username" class="form-control" id="usr">
+                    </div>
+                    <div class="form-group">
+                        <label>Passwords</label>
+                        <input type="password" class="form-control" id="pwd">
+                    </div>
+                    <button class="btn btn-outline-primary" style="position: none; bottom: 28%; left: 80%; border: none; padding: 0%; cursor: pointer;">
+                        <a class="nav-link" style="color: rgb(0, 0, 0);font-size: 150%;">Đăng nhập</a>
+                    </button>
+                </div>
+                    
+            </div>
+        </div>
+    </div>
+</div>
+      <!-- footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>CLUB</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Stadium</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>FANS</h4>
+                <ul>
+                    <li><a href="#">Tickets</a></li>
+                    <li><a href="#">Membership</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Supporters' Clubs</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>COMMUNITY</h4>
+                <ul>
+                    <li><a href="#">Foundation</a></li>
+                    <li><a href="#">Programs</a></li>
+                    <li><a href="#">Volunteering</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>CONTACT</h4>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

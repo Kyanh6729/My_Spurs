@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Xây dựng thanh menu </title>
+        <style type="text/css">
+            ul{
+                background-color:rgb(255, 187, 0);
+                color:white;
+                border:solid;
+                list-style: none;
+
+            }
+            ol{
+                list-style: none;
+                display:inline;
+
+            }
+            .thanhmenu{
+                display:inline-block;
+                margin:05px;
+                position:relative;
+                padding:10px;
+            
+            }
+
+            a{
+                text-decoration: none;
+                color:rgb(0, 0, 0);
+            }
+            a:hover{
+                color:black;
+            }
+            .menuconphukien{
+                display:none;
+                position:absolute;
+                background-color: white;
+                color:black;
+                border:none;
+                font-size:17px;
+                padding:0px;
+                width :800px;
+                margin:auto;
+            }
+            .menuconphukien2{
+                display:none;
+                position:absolute;
+                background-color: white;
+                color:black;
+                border:none;
+                font-size:17px;
+                padding:0px;
+                width :170px;
+                margin:auto;
+            }
+            .menuconphukien li{
+                display:block;
+                width :800px;
+                margin:auto;
+            }
+            li:hover .menuconphukien{
+                display:list-item;
+                width:933px;
+            }
+            b{
+                font-size:20px;
+                display:inline-block;
+                background-color: white;
+                color:black;
+            }
+            table {
+                padding:0px;
+            }
+            th{
+                padding:0px;
+                width:200px;
+ 
+            }
+            li:hover .menuconphukien2{
+                display:list-item;
+                width:fill;
+            }
+            div{
+                border:solid;
+            }
+            .footer{
+                width:200px;
+                padding-right: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <ul align="center">
+            <li class="thanhmenu"><a href="#">Điện thoại</a></li>
+            <li class="thanhmenu"><a href="#">Laptop</a></li>
+            <li class="thanhmenu"><a href="#">Tablet</a></li>
+            <li class="thanhmenu"><a href="#">Phụ kiện</a>
+                <ul class="menuconphukien">
+                    <table >
+                        <tr>
+                            <th align="left">Phụ kiện di động</th>
+                            <th align="left">Thiết bị âm thanh</th>
+                            <th align="left">Thiết bị nhà thông minh</th>
+                            <th align="left">Thương hiệu hàng đầu</th>
+                        </tr>
+                        <tr>
+                            <td align="left">Sạc dự phòng</td>
+                            <td align="left">Tai nghe Bluetooth</td>
+                            <td align="left">Camera trong nhà</td>
+                            <td align="left">Apple</td>
+                        </tr>
+                        <tr>
+                            <td align="left">Sạc, cáp</td>
+                            <td align="left">Tai nghe dây</td>
+                            <td align="left">Camera ngoài trời</td>
+                            <td align="left">Samsung</td>
+                        </tr>
+                        <tr>
+                            <td align="left">Hub, cáp chuyển đổi</td>
+                            <td align="left">Loa</td>
+                            <td align="left">Máy chiếu</td>
+                            <td align="left">Imou</td>
+                        </tr>
+                        <tr>
+                            <td align="left">Ốp lưng điện thoại</td>
+                            <td colspan="2" align="left">Micro</td>
+                            <td align="left">Baseus</td>
+                        </tr>
+                        <tr>
+                            <td align="left"colspan="3">Ốp lưng máy tính bảng</td>
+                            <td align="left" >JBL</td>   
+                        </tr>
+                        <tr>
+                            <td align="left"colspan="3">Miếng dán</td>
+                            <td align="left" >Anker</td> 
+                        </tr>
+                        <tr>
+                            <td align="left"colspan="3">Miếng dán Camera</td>
+                            <td align="left" >Xmobile</td>   
+                        </tr>
+                        <tr>
+                            <td align="left">Túi đựng AirPods</td>
+                            <th align="left">PHỤ KIỆN LAPTOP</td>
+                            <th align="left">THIẾT BỊ LƯU TRỮ</td>
+                            <th align="left">PHỤ KIỆN KHÁC</td>
+                        </tr>
+                        <tr>
+                            <td align="left">AirTag, Vỏ bảo vệ AirTag</td>
+                            <td align="left">Chuột máy tính</td>
+                            <td align="left">Ổ cứng di động</td>
+                            <td align="left">Pin tiểu</td>
+                        </tr>
+                        <tr>
+                            <td align="left">Bút tablet</td>
+                            <td align="left">Bàn phím</td>
+                            <td align="left">Thẻ nhớ</td>
+                            <td align="left">Phụ kiện ô tô</td>
+                        </tr>
+                        <tr>
+                            <td align="left">Giá đỡ điện thoại</td>
+                            <td align="left">Router - Thiết bị mạng</td>
+                            <td align="left"colspan="2">USB</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td align="left">Balo, túi chống sốc</td>
+                        </tr>
+                        <tr >
+                            <td></td>
+                            <td align="left"colspan="3">Giá đỡ laptop</td>
+                        </tr>
+                        <tr >
+                            <td></td>
+                            <td align="left"colspan="3">Phần mềm</td>
+                        </tr>
+                    </table>
+                </ul>
+            <li class="thanhmenu"><a href="#">Smathwach</a></li>
+            <li class="thanhmenu"><a href="#">Đồng hồ</a></li>
+            <li class="thanhmenu"><a href="#">Máy cũ</a>
+                <ul class="menuconphukien2">
+                    <ol align="left">
+                        <li>Máy cũ giá rẻ</li>
+                        <li>Thu cũ đổi mới</li>
+                        
+                    </ol>
+                </ul>
+            </li>
+            <li class="thanhmenu"><a href="#">PC, máy in</a>
+                <ul class="menuconphukien2">
+                    <ol align="left">
+                        <li>Máy in</li>
+                        <li>Mực in</li>
+                        <li>Màn hình máy tính</li>
+                        <li>Máy tính để bàn</li>
+                        <li>Máy chơi game cầm tay</li>
+                        <li>Phần mềm</li>
+                        
+                    </ol>
+                </ul>
+            </li>
+            <li class="thanhmenu"><a href="#">Thẻ cào</a></li>
+            <li class="thanhmenu"><a href="#">Dịch vụ, tiện ích</a></li>
+        </ul>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div align="center">
+            <table>
+                <tr class="footer">
+                    <th align="left" class="footer">Tích điểm quà tặng VIP</th>
+                    <th align="left" class="footer">Giới thiệu công ty (MWG.vn)</th>
+                    <th align="left" class="footer">Tổng đài hỗ trợ</th>
+                </tr>
+                <tr>
+                    <td align="left" class="footer">Lịch sử mua hàng</td>
+                    <td align="left" class="footer">Tuyển dụng</td>
+                    <td align="left" class="footer">Gọi mua</td>
+                </tr>
+                <tr>
+                    <td align="left" class="footer">Tìm hiểu về mua trả góp</td>
+                    <td align="left" class="footer">Gửi góp ý khiếu nại</td>
+                    <td align="left" class="footer">Khiếu nại</td>
+                </tr>
+                <tr>
+                    <td align="left">Chính sách bảo hành</td>
+                    <td align="left">Tìm siêu thị</td>
+                    <td align="left">Bảo hành</td>
+                </tr>
+                <tr>
+                    <td align="left">Chính sách đổi trả</td>
+                    <td align="left">Xem bản mobile</td>
+                </tr>
+                <tr>
+                    <td align="left">Giao hàng, thanh toán</td>
+                </tr>
+                <tr>
+                    <td align="left">Hướng dẫn mua online</td>
+                </tr>
+                <tr>
+                    <td align="left">Bán hàng doanh nghiệp</td>
+                </tr>
+                <tr>
+                    <td align="left">Phiếu mua hàng</td>
+                </tr>
+                <tr>
+                    <td align="left">In hóa đơn điện tử</td>
+                </tr>
+                <tr>
+                    <td align="left">Quy chế hoạt động</td>
+                </tr>
+                <tr>
+                    <td align="left">Chính sách sử lý dữ liệu cá nhân</td>
+                </tr>
+                <tr>
+                    <td align="left">Nội quy cửa hàng</td>
+                </tr>
+                <tr>
+                    <td align="left">Chất lượng phục vụ</td>
+                </tr>
+                <tr>
+                    <td align="left">Cảnh báo giả mạo</td>
+                </tr>
+                <tr>
+                    <td align="left">Chính sách khui hộp sản phẩm apple</td>
+                </tr>
+
+            </table>
+        </div>
+    </body>
+</html>
